@@ -10,7 +10,7 @@ docker create --name=opentracker \
 -e TZ=<timezone> \
 -e PORT=6666 \  #(port should be greater than 1024)
 -p 6666:6666 \ 
--p 6666:6666/udp
+-p 6666:6666/udp \
 auska/docker-opentracker
 ```
 
