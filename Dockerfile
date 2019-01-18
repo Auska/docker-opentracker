@@ -6,7 +6,7 @@ ARG VERSION
 LABEL build_version="blog.auska.win version:- ${VERSION} Build-date:- ${BUILD_DATE}"
 LABEL maintainer="Auska"
 
-ENV TZ=Asia/Shanghai PORT=6666
+ENV TZ=Asia/Shanghai PORT=6969
 
 RUN \
 	echo "**** install packages ****" \
@@ -16,5 +16,5 @@ RUN \
 COPY root/ /
 
 # ports and volumes
-EXPOSE 6666
+EXPOSE 6969
 VOLUME /mnt

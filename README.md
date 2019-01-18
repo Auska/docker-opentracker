@@ -8,9 +8,9 @@ docker create --name=opentracker \
 -v <path to data>:/mnt \
 -e PGID=<gid> -e PUID=<uid> \
 -e TZ=<timezone> \
--e PORT=6666 \  #(port should be greater than 1024)
--p 6666:6666 \ 
--p 6666:6666/udp \
+-e PORT=6969 \  #(port should be greater than 1024)
+-p 6969:6969 \
+-p 6969:6969/udp \
 auska/docker-opentracker
 ```
 
