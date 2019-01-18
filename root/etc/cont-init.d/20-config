@@ -1,0 +1,6 @@
+#!/usr/bin/with-contenv bash
+
+mkdir -p /mnt
+
+# permissions
+chown abc:abc -R /mnt
